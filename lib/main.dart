@@ -14,7 +14,7 @@ class CatsApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: AppRouters.onGenerateRoute,
-      initialRoute: AppRoutes.getStartedScreen,
+      initialRoute: AppRoutes.splachScreen,
     );
   }
 }
