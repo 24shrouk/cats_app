@@ -1,5 +1,5 @@
 import 'package:cats_app/core/constants/app_routes.dart';
-import 'package:cats_app/features/home/presentation/screens/pages/get_started_screen.dart';
+import 'package:cats_app/features/splach_and_get_started/presentation/screens/pages/get_started_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouters {
