@@ -1,6 +1,7 @@
 import 'package:cats_app/core/constants/app_color.dart';
 import 'package:cats_app/core/constants/app_icons.dart';
 import 'package:cats_app/core/constants/app_images.dart';
+import 'package:cats_app/core/constants/app_routes.dart';
 import 'package:cats_app/core/constants/app_styles.dart';
 import 'package:cats_app/core/widgets/custom_elevated_button_widget.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +38,9 @@ class GetStartedScreen extends StatelessWidget {
           CustomElevatedButton(
             iconPath: AppIcons.getStartedIcon,
             title: 'Get started',
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, AppRoutes.homeScreen);
+            },
           ),
         ],
       ),
