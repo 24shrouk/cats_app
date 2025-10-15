@@ -39,7 +39,7 @@ class GetStartedScreen extends StatelessWidget {
             iconPath: AppIcons.getStartedIcon,
             title: 'Get started',
             onPressed: () {
-              Navigator.pushReplacementNamed(context, AppRoutes.homeScreen);
+              Navigator.pushReplacementNamed(context, AppRoutes.mainScreen);
             },
           ),
         ],

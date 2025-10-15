@@ -16,6 +16,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List categories = ['All', 'Cats', 'Dogs', 'Birds', 'Fish', 'Reptiles'];
+
   int selectedIndex = 0;
   int currentIndex = 0;
   @override
@@ -25,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppColors.whiteColor,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.only(left: 16, top: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -88,57 +89,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentIndex,
-        onTap: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: AppColors.whiteColor,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        selectedItemColor: AppColors.primaryColor,
-        items: [
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              AppIcons.homeIcon,
-              color: currentIndex == 0
-                  ? AppColors.primaryColor
-                  : AppColors.greyC8CColor,
-            ),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              AppIcons.heartIcon,
-              color: currentIndex == 1
-                  ? AppColors.primaryColor
-                  : AppColors.greyC8CColor,
-            ),
-            label: 'Favorites',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              AppIcons.messagesIcon,
-              color: currentIndex == 2
-                  ? AppColors.primaryColor
-                  : AppColors.greyC8CColor,
-            ),
-            label: 'Messages',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              AppIcons.profileIcon,
-              color: currentIndex == 3
-                  ? AppColors.primaryColor
-                  : AppColors.greyC8CColor,
-            ),
-            label: 'Profile',
-          ),
-        ],
       ),
     );
   }

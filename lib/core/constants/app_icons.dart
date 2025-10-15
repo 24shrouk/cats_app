@@ -8,4 +8,6 @@ abstract class AppIcons {
   static const String notificationIcon = 'assets/icons/notification.svg';
   static const String profileIcon = 'assets/icons/profile_icon.svg';
   static const String searchIcon = 'assets/icons/search_normal_icon.svg';
+  static const String favoriteIcon = 'assets/icons/favorite_icon.svg';
+  static const String homeFillIcon = 'assets/icons/home_fill_icon.svg';
 }

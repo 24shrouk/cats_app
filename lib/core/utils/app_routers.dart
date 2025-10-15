@@ -1,4 +1,6 @@
 import 'package:cats_app/core/constants/app_routes.dart';
+import 'package:cats_app/core/widgets/bottom_navigation_bar.dart';
+import 'package:cats_app/features/favorite/presentation/screens/pages/favorite_screen.dart';
 import 'package:cats_app/features/home/presentation/screens/pages/details_screen.dart';
 import 'package:cats_app/features/home/presentation/screens/pages/home_screen.dart';
 import 'package:cats_app/features/splach_and_get_started/presentation/screens/pages/get_started_screen.dart';
@@ -24,7 +26,14 @@ class AppRouters {
         {
           return MaterialPageRoute(builder: (_) => const DetailsScreen());
         }
-
+      case AppRoutes.favoriteScreen:
+        {
+          return MaterialPageRoute(builder: (_) => const FavoriteScreen());
+        }
+      case AppRoutes.mainScreen:
+        {
+          return MaterialPageRoute(builder: (_) => const MainScreen());
+        }
       default:
         return MaterialPageRoute(
           builder: (_) =>
